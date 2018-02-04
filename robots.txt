@@ -1,2 +1,4 @@
 User-agent: *
 Disallow:
+
+SITEMAP: https://renmuell.github.io/sitemap.xml
