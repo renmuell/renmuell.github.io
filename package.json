@@ -1,0 +1,26 @@
+{
+  "name": "renmuell.github.io",
+  "version": "1.0.0",
+  "description": "Peronal website for Rene Müller",
+  "main": "index.html",
+  "scripts": {
+    "build": "node_modules/.bin/minify assets/css/index.css -o assets/css/index.min.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renmuell/renmuell.github.io.git"
+  },
+  "keywords": [
+    "website"
+  ],
+  "author": "Rene Müller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/renmuell/renmuell.github.io/issues"
+  },
+  "homepage": "https://github.com/renmuell/renmuell.github.io#readme",
+  "dependencies": {
+    "minifier": "^0.8.1"
+  }
+}
