@@ -4,7 +4,7 @@
   "description": "Peronal website for Rene Müller",
   "main": "index.html",
   "scripts": {
-    "build": "node_modules/.bin/minify assets/css/index.css -o assets/css/index.min.css",
+    "build": "node_modules/.bin/minify assets/css/index.css -o assets/css/index.min.css | cp node_modules/rm_atmo/dist/rm_atmo.min.js assets/js/rm_atmo.min.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/renmuell/renmuell.github.io#readme",
   "dependencies": {
-    "minifier": "^0.8.1"
+    "minifier": "^0.8.1",
+    "rm_atmo": "^1.0.0"
   }
 }
