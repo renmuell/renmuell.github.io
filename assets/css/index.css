@@ -27,7 +27,7 @@ article {
     margin-left: -2px;
     margin-right: -2px;
     border-radius: 3px;
-    border-bottom: 4px solid #cccccc9c;
+    border-bottom: 4px solid #ccc;
 }
 
 article:after {
@@ -89,9 +89,9 @@ article .date {
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
-    border-top: 4px solid #cccccc9c;
+    border-top: 4px solid #ccc;
     box-sizing: border-box;
-    border-bottom: 4px solid #cccccc9c;
+    border-bottom: 4px solid #ccc;
 }
 
 .profile .me {
