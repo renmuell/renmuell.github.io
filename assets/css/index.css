@@ -1,3 +1,36 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v14/IY9HZVvI1cMoAHxvl0w9LVKPGs1ZzpMvnHX-7fPOuAc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v14/22JRxvfANxSmnAhzbFH8PgLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/8qcEw_nrk_5HEcCpYdJu8BTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/MDadn8DQ_3oT6kvnUq_2r_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
 html, body {
     font-family: 'Lato', sans-serif;
     padding: 0;
@@ -101,8 +134,7 @@ article .date {
 }
 
 .profile h1 {
-    font-family: Hack, monospace; 
-    font-size: 2em;
+    font-size: 3em;
     margin-bottom: 0;
 }
 
@@ -122,23 +154,6 @@ article .date {
         border-bottom-left-radius: 3px;
         padding: 5px;
     }
-
-    nav ul {
-        list-style: none;
-        padding:0;
-        margin:0;
-        text-align: center;
-    }
-
-    nav ul li {
-        display: inline;
-    } 
-
-    nav ul li a {
-        text-decoration: none;
-        color: #333;
-        padding:2px;
-    } 
 
     main {
         width: 900px;
@@ -162,8 +177,6 @@ article .date {
     .profile h1 {
         color: white;
         text-shadow: 0 2px 5px rgba(0,0,0,.3);
-        font-size: 2em;
-        margin-bottom: 0;
     }
 
     .profile a {
@@ -182,7 +195,6 @@ article .date {
         right: 0;
         bottom:0;
     }
-
 }
 
 @media screen and (max-width: 900px) {
