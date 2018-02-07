@@ -1,6 +1,6 @@
 {
   "name": "renmuell.github.io",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Peronal website for Rene Müller",
   "main": "index.html",
   "scripts": {
@@ -22,6 +22,6 @@
   "homepage": "https://github.com/renmuell/renmuell.github.io#readme",
   "dependencies": {
     "minifier": "^0.8.1",
-    "rm_atmo": "^1.0.0"
+    "rm_atmo": "^1.0.1"
   }
 }
