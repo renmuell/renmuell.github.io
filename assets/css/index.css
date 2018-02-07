@@ -78,6 +78,12 @@ article {
     text-align: left; 
 }
 
+article .date {
+    padding-top:10px;
+    text-align: right;
+    color: #555;
+}
+
 .project-article .teaser {
     width: 100%;
     margin-top: 20px;
