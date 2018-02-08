@@ -212,6 +212,10 @@ article .date {
         margin-right: 0px;
         border-radius: 0px;
     }
+
+    .profile h1 {
+        font-size: 2em;
+    }
 }
 
 @media print {
