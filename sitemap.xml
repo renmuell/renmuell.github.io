@@ -1,14 +1,24 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <url>
-    <loc>https://renmuell.github.io/</loc>
-    <lastmod>2018-02-04T01:09:34+00:00</lastmod>
-    <priority>1.00</priority>
-  </url>
-  <url>
-    <loc>https://renmuell.github.io/rm_atmo/</loc>
-    <lastmod>2018-02-03T10:30:49+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>https://renmuell.github.io/</loc>
+  <lastmod>2018-02-27T20:29:35+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://renmuell.github.io/TwitterAnnotator/</loc>
+  <lastmod>2018-02-27T20:04:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://renmuell.github.io/rm_atmo/</loc>
+  <lastmod>2018-02-08T06:26:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
 </urlset>
