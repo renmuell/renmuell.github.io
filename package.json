@@ -1,7 +1,7 @@
 {
   "name": "renmuell.github.io",
-  "version": "1.0.3",
-  "description": "Peronal website for Rene Müller",
+  "version": "1.0.4",
+  "description": "Personal website for Rene Müller",
   "main": "index.html",
   "scripts": {
     "build": "node_modules/.bin/minify assets/css/index.css -o assets/css/index.min.css | cp node_modules/rm_atmo/dist/rm_atmo.min.js assets/js/rm_atmo.min.js",
