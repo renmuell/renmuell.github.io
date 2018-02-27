@@ -119,8 +119,22 @@
                     </a>
                 </h2>
             </div>   
-
-            <img style="height: 400px;width: 600px; margin:0 auto;border:none;display:block;" class="teaser" src="assets/img/twitter_showcase.gif" alt="rm_atmo Teaser"/>
+            <style>
+                .teaser.teaser-twitter {
+                    height: 400px;
+                    width: 600px; 
+                    margin:0 auto;
+                    border:none;
+                    display:block;
+                }
+                @media (max-width: 600px) {
+                    .teaser.teaser-twitter {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            </style>
+            <img class="teaser teaser-twitter" src="assets/img/twitter_showcase.gif" alt="rm_atmo Teaser"/>
 
             <div class="content">
                 <hr>
