@@ -25,6 +25,8 @@ block header
     meta(name="description" content=article.description)
     meta(name="keywords" content=article.type + " Rene Müller " + article.title)
 
+    link(rel="canonical" href="https://renmuell.github.io/articles/" + article.id + ".html")
+
     if article.date
         meta(name="date" content=article.date  scheme="DD.MM.YYYY")
 

@@ -27,7 +27,7 @@ article(class=article.type + "-article " + extraClass)
         if article.teaser.type == 'img'
             img.teaser(src=assetsRoot + article.teaser.src alt=article.teaser.alt)
         if article.teaser.type == 'video'
-            video(class="teaser" src=assetsRoot +article.teaser.src muted autoplay loop alt=article.teaser.alt)
+            video(class="teaser" src=assetsRoot +article.teaser.src muted autoplay loop)
     .date
         span= article.date
     .content
