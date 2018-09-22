@@ -1,0 +1,282 @@
+{
+    "articles": [{
+        "id": "hi",
+        "description": "Welcome",
+        "card": {
+            "src": "assets/img/renmuell.github.io-card.png",
+            "alt": "renmuell website"
+        },
+        "fa_icon": "fas fa-comment",
+        "type": "blog",
+        "title": "Hi,",
+        "body": "./src/jade/articles/hi.jade"
+    },{
+        "id": "update_2018_09_18",
+        "description": "This website evolved 🎉",
+        "card": {
+            "src": "assets/img/renmuell.github.io-card.png",
+            "alt": "renmuell website"
+        },
+        "fa_icon": "fas fa-comment",
+        "type": "blog",
+        "teaser": {
+            "type": "img",
+            "src": "img/webseite_level_up.png",
+            "alt": "website update teaser"
+        }, 
+        "title": "Website level up!",
+        "body": "./src/jade/articles/2018_09_18_update.jade",
+        "date":"18.09.2018",
+        "showTweetButton": true,
+        "TweetButtonMessage": "New update on the website by @renmuell"
+    },{
+        "id": "Sense2d",
+        "description": "Showcase for the game Sense2d.",
+        "card": {
+            "src": "assets/img/sense2d-card.png",
+            "alt": "Showcase for the game Sense2d"
+        },
+        "fa_icon": "fas fa-code-branch",
+        "type": "project",
+        "title": "Sense2d",
+        "title_buttons": [{
+            "type": "repro",
+            "href": "https://github.com/renmuell/Sense2d"
+        },{
+            "type": "demo",
+            "href": "http://renmuell.github.io/Sense2d/sense2d.html"
+        }],
+        "teaser": {
+            "type": "video",
+            "src": "img/sense2d.mp4",
+            "alt": "sense2d demo"
+        }, 
+        "body": "./src/jade/articles/Sense2d.jade",
+        "date":"12.09.2018",
+        "showTweetButton": true,
+        "TweetButtonMessage": "Check out Sense2d by @renmuell"
+    },{
+        "id": "sense",
+        "description": "Showcase for the game Sense.",
+        "card": {
+            "src": "assets/img/sense-card.png",
+            "alt": "Showcase for the game Sense."
+        },
+        "fa_icon": "fas fa-code-branch",
+        "type": "project",
+        "title": "Sense",
+        "title_buttons": [{
+            "type": "repro",
+            "href": "https://github.com/renmuell/Sense"
+        },{
+            "type": "demo",
+            "href": "http://renmuell.github.io/Sense/"
+        }],
+        "teaser": {
+            "type": "video",
+            "src": "img/sense.mp4",
+            "alt": "sense demo"
+        },
+        "body": "./src/jade/articles/sense.jade",
+        "date":"11.09.2018",
+        "showTweetButton": true ,
+        "TweetButtonMessage": "Check out Sense by @renmuell"
+    },{
+        "id": "makrene",
+        "description": "Showcase for the makrene.js project.",
+        "card": {
+            "src": "assets/img/makrene-card.png",
+            "alt": "Showcase for the makrene.js project."
+        },
+        "fa_icon": "fas fa-code-branch",
+        "type": "project",
+        "title": "makrene.js",
+        "title_buttons": [{
+            "type": "repro",
+            "href": "https://github.com/renmuell/makrenejs"
+        },{
+            "type": "demo",
+            "href": "http://renmuell.github.io/makrenejs/"
+        }],
+        "teaser": {
+            "type": "img",
+            "src": "img/makrene_runner.gif",
+            "alt": "makrene runner"
+        },
+        "body": "./src/jade/articles/makrene.jade",
+        "date":"07.09.2018",
+        "showTweetButton": true,
+        "TweetButtonMessage": "Check out makrene.js by @renmuell"
+    },{
+        "id": "Pi-Game",
+        "description": "Showcase for the Pi_Game project.",
+        "card": {
+            "src": "assets/img/pi_game-card.png",
+            "alt": "Showcase for the Pi_Game project."
+        },
+        "fa_icon": "fas fa-flask",
+        "type": "project",
+        "title": "Pi_Game",
+        "title_buttons": [{
+            "type": "repro",
+            "href": "https://github.com/renmuell/Pi_Game"
+        }],
+        "teaser": {
+            "type": "img",
+            "src": "img/pi_game_shoot.gif",
+            "alt": "pi game shoot"
+        },
+        "body": "./src/jade/articles/Pi-Game.jade",
+        "date":"13.03.2018",
+        "showTweetButton": true,
+        "TweetButtonMessage": "Check out Pi_Game by @renmuell"  
+    },{
+        "id": "TwitterAnnotator",
+        "description": "Showcase for the Twitter-Annotator project.",
+        "card": {
+            "src": "assets/img/twitterannotator-card.png",
+            "alt": "Showcase for the Twitter-Annotator project."
+        },
+        "fa_icon": "fas fa-code-branch",
+        "type": "project",
+        "extraClass": "project-no-frame",
+        "title": "Twitter Annotator",
+        "title_buttons": [{
+            "type": "repro",
+            "href": "https://github.com/renmuell/TwitterAnnotator"
+        },{
+            "type": "demo",
+            "href": "https://renmuell.github.io/TwitterAnnotator/"
+        }],
+        "teaser": {
+            "type": "img",
+            "src": "img/twitter_showcase.gif",
+            "alt": "TwitterAnnotator Teaser"
+        },
+        "body": "./src/jade/articles/TwitterAnnotator.jade",
+        "date":"27.02.2018",
+        "showTweetButton": true,
+        "TweetButtonMessage": "Check out Twitter Annotator by @renmuell"   
+    },{
+        "id": "bunny",
+        "description": "Showcase for the bunny vector graphic.",
+        "card": {
+            "src": "assets/img/bunny-card.png",
+            "alt": "Showcase for the bunny vector graphic."
+        },
+        "fa_icon": "fas fa-paint-brush",
+        "type": "project",
+        "title": "Bunny",
+        "teaser": {
+            "type": "img",
+            "src": "img/bunny_teaser.png",
+            "alt": "Bunny Teaser"
+        },
+        "body":"./src/jade/articles/bunny.jade",
+        "date":"17.02.2018",
+        "showTweetButton": true,
+        "TweetButtonMessage": "Check out bunny graphic by @renmuell"     
+    },{
+        "id": "pig",
+        "description": "Showcase for the pig vector graphic.",
+        "card": {
+            "src": "assets/img/pig-card.png",
+            "alt": "Showcase for the pig vector graphic."
+        },
+        "fa_icon": "fas fa-paint-brush",
+        "type": "project",
+        "title": "Pig",
+        "teaser": {
+            "type": "img",
+            "src": "img/pig_teaser.png",
+            "alt": "Pig Teaser"
+        },
+        "body": "./src/jade/articles/pig.jade",
+        "date":"17.02.2018",
+        "showTweetButton": true,
+        "TweetButtonMessage": "Check out pig graphic by @renmuell"   
+    },{
+        "id": "rockfist",
+        "description": "Showcase for the rockfist vector graphic.",
+        "card": {
+            "src": "assets/img/rockfist-card.png",
+            "alt": "Showcase for the rockfist vector graphic."
+        },
+        "fa_icon": "fas fa-paint-brush",
+        "type": "project",
+        "title": "Rockfist",
+        "teaser": {
+            "type": "img",
+            "src": "img/rockfist_teaser.png",
+            "alt": "rockfist Teaser"
+        },
+        "body": "./src/jade/articles/rockfist.jade",
+        "date":"17.02.2018",
+        "showTweetButton": true,
+        "TweetButtonMessage": "Check out rockfist graphic by @renmuell"     
+    },{
+        "id": "bowling",
+        "description": "Showcase for bowling vector graphics.",
+        "card": {
+            "src": "assets/img/bowling-card.png",
+            "alt": "Showcase for bowling vector graphics"
+        },
+        "fa_icon": "fas fa-paint-brush",
+        "type": "project",
+        "title": "Bowling",
+        "teaser": {
+            "type": "img",
+            "src": "img/bowling_teaser.png",
+            "alt": "bowling teaser"
+        },
+        "body": "./src/jade/articles/bowling.jade",
+        "date":"07.02.2018",
+        "showTweetButton": true,
+        "TweetButtonMessage": "Check out bowling graphic by @renmuell"    
+    },{
+        "id": "rM_AtMo",
+        "description": "Showcase for the rM_AtMo project.",
+        "card": {
+            "src": "assets/img/rm_atmo-card.png",
+            "alt": "Showcase for the rM_AtMo project."
+        },
+        "fa_icon": "fas fa-code-branch",
+        "type": "project",
+        "title": "rM_AtMo",
+        "title_buttons": [{
+            "type": "repro",
+            "href": "https://github.com/renmuell/rm_atmo"
+        },{
+            "type": "demo",
+            "href": "https://renmuell.github.io/rm_atmo/"
+        }],
+        "teaser": {
+            "type": "img",
+            "src": "img/rm_atmo.gif",
+            "alt": "rm_atmo Teaser"
+        },
+        "body": "./src/jade/articles/rM_AtMo.jade",
+        "date":"03.02.2018",
+        "showTweetButton": true,
+        "TweetButtonMessage": "Check out rM_AtMo by @renmuell"     
+    },{
+        "id": "cake",
+        "description": "Showcase for the cake vector graphic.",
+        "card": {
+            "src": "assets/img/cake-card.png",
+            "alt": "Showcase for the cake vector graphic."
+        },
+        "fa_icon": "fas fa-paint-brush",
+        "type": "project",
+        "title": "Cake",
+        "teaser": {
+            "type": "img",
+            "src": "img/cake.png",
+            "alt": "Cake Teaser"
+        },
+        "body": "./src/jade/articles/cake.jade",
+        "date":"22.01.2018",
+        "showTweetButton": true,
+        "TweetButtonMessage": "Check out cake graphic by @renmuell"   
+    }]
+}

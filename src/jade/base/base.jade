@@ -1,0 +1,46 @@
+doctype html
+html(lang="en")
+    head
+        //
+        //     ___           __                          _   _ _ _           
+        //    / __\_   _    /__\ ___ _ __   ___    /\/\ (_) (_) | | ___ _ __ 
+        //   /__\// | | |  / \/// _ \ '_ \ / _ \  /    \| | | | | |/ _ \ '__|
+        //  / \/  \ |_| | / _  \  __/ | | |  __/ / /\/\ \ |_| | | |  __/ |   
+        //  \_____/\__, | \/ \_/\___|_| |_|\___| \/    \/\__,_|_|_|\___|_|   
+        //         |___/                                                     
+
+        meta(charset='uft-8')
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+        meta(name="author" content="Rene Müller")
+
+        
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+
+        include ./favicon.jade
+        link(href=assetsRoot+"vendors/fontawesome/css/all.min.css" rel="stylesheet")
+        style
+            include ../../../assets/css/web-fonts.css
+        style
+            include ../../../assets/css/index.min.css
+        block header
+    body
+        .background
+        main
+            include ./header.jade
+            block content
+            include ./footer.jade
+        script
+            include ../../../assets/vendors/cookies.js/cookies.min.js
+        script
+            include ../../../assets/vendors/rm_atmo/rm_atmo.min.js
+        script
+             include ../../../assets/js/background.min.js
+        script
+             include ../../../assets/js/background.firebase.min.js
+        script.
+            console.log("Hey, just wondering, what day is it? Tweet me @renmuell 😋")
+        script
+            include ../../../assets/js/play.min.js
+        block footer

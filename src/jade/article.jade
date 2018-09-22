@@ -1,0 +1,47 @@
+extends ./base/base.jade
+
+block title
+    h1 &lt;#{article.title}/&gt;
+    p!= article.description
+    br
+    p
+        a(href="https://github.com/renmuell" title="GitHub")
+            i.fab.fa-github.fa-2x
+        a(href="https://codepen.io/renmuell" title="CodePen")
+            i.fab.fa-codepen.fa-2x
+        a(href="https://twitter.com/renmuell" title="Twitter")
+            i.fab.fa-twitter.fa-2x
+        a(href="https://dribbble.com/renmuell" title="Dribbble")
+            i.fab.fa-dribbble.fa-2x
+        a(href="https://renemueller.deviantart.com/" title="DeviantArt")
+            i.fab.fa-deviantart.fa-2x
+        a(href="https://www.xing.com/profile/Rene_Mueller227" title="Xing")
+            i.fab.fa-xing.fa-2x
+
+
+block header
+    title #{article.title}
+
+    meta(name="description" content=article.description)
+    meta(name="keywords" content=article.type + " Rene Müller " + article.title)
+
+    if article.date
+        meta(name="date" content=article.date  scheme="DD.MM.YYYY")
+
+    meta(property="og:url" content="https://renmuell.github.io/articles/" + article.id + ".html")
+    meta(property="og:title" content=article.title)
+    meta(property="og:description" content=article.description)
+    meta(property="og:image" content= site_url + article.card.src)
+    meta(property="og:site_name" content="Rene Müller")
+
+    meta(name="twitter:card" content="summary_large_image")
+    meta(name="twitter:site" content="@renmuell")
+    meta(name="twitter:creator" content="@renmuell")
+    meta(name="twitter:image:alt" content=article.card.alt)
+
+block content
+    include ./index/article.jade
+
+block footer
+    script
+        include ../../assets/js/tweet.min.js

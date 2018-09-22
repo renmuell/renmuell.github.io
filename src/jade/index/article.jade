@@ -1,0 +1,43 @@
+- var extraClass = article.extraClass ? article.extraClass : ""
+article(class=article.type + "-article " + extraClass)
+    .title
+        h2(id=article.id)
+            a(href= site_url + "articles/" + article.id + ".html")
+                if article.fa_icon
+                    i(class=article.fa_icon)
+                    | &nbsp;
+                | #{article.title}
+
+            if article.showTweetButton
+                a.title_button.twitter-share-button(href=("https://twitter.com/intent/tweet?text="+article.TweetButtonMessage+"&url="+site_url + "articles/" + article.id + ".html") data-size="large") Tweet
+
+            if article.title_buttons
+                for title_button in article.title_buttons
+                    if title_button.type == 'repro'
+                        a.repro-link(href=title_button.href)
+                            i.fab.fa-github
+                            | &nbsp;Repository&nbsp;
+                            i.fas.fa-angle-right
+                    if title_button.type == 'demo'
+                        a.demo-link(href=title_button.href)
+                            | Demo&nbsp;
+                            i.fas.fa-angle-right
+
+    if article.teaser
+        if article.teaser.type == 'img'
+            img.teaser(src=assetsRoot + article.teaser.src alt=article.teaser.alt)
+        if article.teaser.type == 'video'
+            video(class="teaser" src=assetsRoot +article.teaser.src muted autoplay loop alt=article.teaser.alt)
+    .date
+        span= article.date
+    .content
+        if short == true
+            div!= article.bodyShort
+        if short == false
+            div!= article.body
+    if short == true
+        if article.hasShort == true
+            .goTo
+                a(href= site_url + "articles/" + article.id + ".html") Read more <i class="fas fa-chevron-right"></i>
+
+        
