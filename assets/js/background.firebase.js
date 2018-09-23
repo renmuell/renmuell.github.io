@@ -4,6 +4,8 @@
    
     var instance = {};
 
+    var startTime = Date.now();
+
     var config = {
         apiKey: "AIzaSyCyWJeSdP6se7yaYV3aofKipucAFAGLYY8",
         authDomain: "renmuell-firebase.firebaseapp.com",
@@ -21,17 +23,20 @@
         addScript('firebaseApp', 'https://www.gstatic.com/firebasejs/5.0.0/firebase-app.js', function(){
             addScript('firebaseDatabase', 'https://www.gstatic.com/firebasejs/5.0.0/firebase-database.js', function(){
                 
-                instance.myLastTapTimestamp = 0;
+                instance.myLastTapTimestamp = parseInt(Date.now().toString());
                 window.firebase.initializeApp(config);
                 instance.database = firebase.database();
                 instance.ref = instance.database.ref('lastUserTap');
                 instance.ref.on('value', throttle(function(data){
-                    if (data.created != instance.myLastTapTimestamp)  {
+                    data = data.val();
+                    data.created = parseInt(data.created);
+
+                    if (Math.abs(startTime - Date.now()) > 1000 && data.created != instance.myLastTapTimestamp)  {
                         var muted = true;
                         if (window.docCookies.hasItem("mute-sharing-firebase")) {
                             muted = window.docCookies.getItem("mute-sharing-firebase") == "true";
                         }
-                        window.rM_AtMo_Instance.addUserTap(data.val(), muted);
+                        window.rM_AtMo_Instance.addUserTap(data, muted);
                     }
                 }, 100))
             });
@@ -41,7 +46,7 @@
     window.rM_AtMo_Instance.onTap(throttle(function(data){
         if (instance.ref) {
             data.created = Date.now().toString()
-            instance.myLastTapTimestamp = data.created;
+            instance.myLastTapTimestamp = parseInt(data.created);
             instance.ref.set(data);
         }
     }, 100));
