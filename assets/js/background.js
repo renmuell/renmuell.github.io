@@ -10,7 +10,10 @@
 
     window.rM_AtMo_Instance = rM_AtMo.create({
         domElement: document.getElementsByClassName("background")[0],
-        muted: muted
+        muted: muted,
+        enableCosmosControl: true,
+        showCosmosControl: false,
+        renderCss: true
     })
 
 }())

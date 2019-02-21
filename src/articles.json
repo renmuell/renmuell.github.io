@@ -11,6 +11,25 @@
         "title": "Hi,",
         "body": "./src/jade/articles/hi.jade"
     },{
+        "id": "update_2019_02_21",
+        "description": "This is a small update for the background",
+        "card": {
+            "src": "assets/img/update_02_19-card.png",
+            "alt": "renmuell website"
+        },
+        "fa_icon": "fas fa-comment",
+        "type": "blog",
+        "teaser": {
+            "type": "img",
+            "src": "img/update_02_19-teaser.png",
+            "alt": "website update teaser"
+        }, 
+        "title": "Small update",
+        "body": "./src/jade/articles/update_2019_02_21.jade",
+        "date":"21.02.2019",
+        "showTweetButton": true,
+        "TweetButtonMessage": "New update on the website by @renmuell"
+    },{
         "id": "update_2018_09_18",
         "description": "This website evolved 🎉",
         "card": {

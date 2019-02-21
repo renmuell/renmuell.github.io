@@ -63,7 +63,7 @@
             $setting_mute_background.checked = false;
             $setting_mute_sharing_firebase.checked = true;
             if (window.rM_AtMo_Instance) {
-                window.rM_AtMo_Instance.muted = false;
+                window.rM_AtMo_Instance.unMute()
             }
         }
     });
@@ -72,12 +72,12 @@
         if ($setting_mute_background.checked) {
             docCookies.setItem("mute-background", true, Infinity);
             if (window.rM_AtMo_Instance) {
-                window.rM_AtMo_Instance.muted = true;
+                window.rM_AtMo_Instance.mute();
             }
         } else {
             docCookies.removeItem("mute-background");
             if (window.rM_AtMo_Instance) {
-                window.rM_AtMo_Instance.muted = false;
+                window.rM_AtMo_Instance.unMute()
             }
         }
     });

@@ -1,0 +1,1 @@
+.me_black_white{max-width:100%;display:block;margin:0 auto;width:400px;animation:me_hide 10s 3s infinite alternate ease-in-out}@keyframes me_hide{0%,100%,60%,70%{transform:translateY(0);opacity:1}50%{transform:translateY(30px);opacity:0}}

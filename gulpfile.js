@@ -38,8 +38,8 @@ var path = {
         jade     : 'src/jade/index.jade',
         js: 'assets/js/index.js',
       },
-      cv:{
-        jade: 'src/jade/cv.jade',
+      me:{
+        jade: 'src/jade/me.jade',
       },
       articleTemplate:{
         jade: 'src/jade/article.jade',
@@ -258,8 +258,8 @@ gulp.task('jade-index', ['json', 'less', 'js', 'copy', 'fonts'], function() {
     .pipe(gulp.dest(path.build.root))
 });
 
-gulp.task('jade-cv', ['less', 'copy', 'fonts'], function() {
-  gulp.src(path.src.pages.cv.jade)
+gulp.task('jade-me', ['less', 'copy', 'fonts'], function() {
+  gulp.src(path.src.pages.me.jade)
     .pipe(data(function(){
       return {
         assetsRoot: "assets/",
@@ -307,7 +307,7 @@ gulp.task('jade-articles', ['json', 'less', 'copy', 'fonts'], function(){
 
 gulp.task('sitemap', [
   'jade-index', 
-  //'jade-cv', 
+  'jade-me', 
   'jade-articles', 
   'jade-settings'
 ], function () {

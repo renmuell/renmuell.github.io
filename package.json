@@ -1,6 +1,6 @@
 {
   "name": "renmuell.github.io",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Personal website for Rene Müller",
   "main": "index.html",
   "scripts": {
@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/renmuell/renmuell.github.io#readme",
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.3.1",
+    "@fortawesome/fontawesome-free": "^5.4.1",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.10.0",
     "gulp-concat": "^2.6.1",
@@ -37,7 +37,7 @@
     "gulp-sitemap": "^5.1.0",
     "gulp-uglify": "^3.0.1",
     "jade": "^1.11.0",
-    "rm_atmo": "^1.0.3"
+    "rm_atmo": "^1.0.8"
   },
   "dependencies": {}
 }

@@ -1,10 +1,14 @@
 extends ./base/base.jade
 
 block header
-    title CV
+    title About me
+
+    link(rel="canonical" href="https://renmuell.github.io/me.html")
+    style
+        include ../../assets/css/me.min.css
 
 block title
-    h1 &lt;Curriculum vitae/&gt;
+    h1 &lt;About me/&gt;
     p
         | Software Developer & Frontend Designer with a passion for UX.
     br
@@ -25,19 +29,15 @@ block title
 block content
     article
         .title
-            h2 Experiences
+            h2.rm_atmo-daytime-color  Hi,
+
+        div(style="overflow:hidden;border-bottom:1px solid #ccc")
+            img.me_black_white.teaser(src=assetsRoot+"img/me_black_white.png" alt="rene black and white")
+
+        .content
+            div 
+                p I love to code and design great user experiences. Learn more about me 😀
+
     article
         .title
-            h2 Education
-    article
-        .title
-            h2 Conferences & Seminars
-    article
-        .title
-            h2 Publications
-    article
-        .title
-            h2 Interests
-    article
-        .title
-            h2 Portfolio
+            h2.rm_atmo-daytime-color  Coming soon ...
