@@ -1,6 +1,6 @@
 {
   "name": "renmuell.github.io",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Personal website for Rene Müller",
   "main": "index.html",
   "scripts": {
@@ -37,7 +37,7 @@
     "gulp-sitemap": "^5.1.0",
     "gulp-uglify": "^3.0.1",
     "jade": "^1.11.0",
-    "rm_atmo": "^1.0.8"
+    "rm_atmo": "^1.0.9"
   },
   "dependencies": {}
 }
