@@ -1,13 +1,22 @@
 nav
     ul
+        li(class=selected=="home"?"active":"")
+            a.rm_atmo-daytime-color.rm_atmo-daytime-border-color(href=site_url title="Home")
+                i.fa.fa-home
+                span.onlyDestop &nbsp;&nbsp;Home
+        li(class=selected=="me"?"active":"")
+            a.rm_atmo-daytime-color.rm_atmo-daytime-border-color(href=site_url + "me.html" title="About me")
+                i.fas.fa-address-card
+                span.onlyDestop &nbsp;&nbsp;About me
+        li(class=selected=="settings"?"active":"")
+            a.rm_atmo-daytime-color.rm_atmo-daytime-border-color(href=site_url + "settings.html" title="Settings")
+                i.fa.fa-cogs
+                span.onlyDestop &nbsp;&nbsp;Settings
         li
-            a(href=site_url title="Home") Home
+            a.rm_atmo-daytime-color.rm_atmo-daytime-border-color(id="play_buton" href="#play" title="Play with Background") Play
         li
-            a(href=site_url + "me.html" title="Curriculum vitae") Me
-        li
-            a(id="play_buton" href="#play" title="Play with Background") Play
-        li
-            a(href=site_url + "settings.html" title="Settings") Settings
+            a(href="https://renmuell.github.io/de" title="renmuell.github.io deutsch")
+                i.flag.flag-de
 
 header.profile
     img(class="me" src=assetsRoot+"img/me.png" alt="profile image")

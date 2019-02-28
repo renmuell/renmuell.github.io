@@ -1,5 +1,8 @@
 extends ./base/base.jade
 
+block link
+ -var selected = 'article';
+
 block title
     h1 &lt;#{article.title}/&gt;
     p!= article.description

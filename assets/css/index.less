@@ -62,18 +62,32 @@ article .content  {
 
 nav ul {
     list-style: none;
+    padding:0;
 }
 
 nav li {
     display: inline;
     padding: 0 10px;
+    border-right: 1px solid #cacaca;
+}
+
+nav li:last-of-type {
+    border-right: none;
 }
 
 nav a {
+    font-size: 18px;
     cursor: pointer;
-    color: #333;
     text-decoration: none;
     padding: 5px 10px;
+    text-shadow: 0 1px 3px rgba(0,0,0,.2);
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-radius: 3px;
+}
+
+nav li:not(.active) a:not(:hover) {
+    border-color: transparent!important;
 }
 
 article .title {
@@ -94,6 +108,10 @@ article .title {
 
 article .title a {
     text-decoration: none;
+}
+
+article h2 {
+    text-shadow: 0 1px 3px rgba(0,0,0,.2);
 }
 
 article .content {
@@ -263,6 +281,10 @@ article .date {
         margin-bottom: 18px;
         padding-bottom: 17px;
         border-bottom: 1px solid #ccc;
+    }
+
+    .onlyDestop {
+        display: none;
     }
 }
 

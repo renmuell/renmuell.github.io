@@ -1,14 +1,6 @@
 doctype html
 html(lang="en")
     head
-        //
-        //     ___           __                          _   _ _ _           
-        //    / __\_   _    /__\ ___ _ __   ___    /\/\ (_) (_) | | ___ _ __ 
-        //   /__\// | | |  / \/// _ \ '_ \ / _ \  /    \| | | | | |/ _ \ '__|
-        //  / \/  \ |_| | / _  \  __/ | | |  __/ / /\/\ \ |_| | | |  __/ |   
-        //  \_____/\__, | \/ \_/\___|_| |_|\___| \/    \/\__,_|_|_|\___|_|   
-        //         |___/                                                     
-
         meta(charset='utf-8')
         meta(http-equiv="X-UA-Compatible" content="IE=edge")
         meta(name="viewport" content="width=device-width, initial-scale=1")
@@ -16,16 +8,23 @@ html(lang="en")
         
         meta(http-equiv="X-UA-Compatible" content="IE=edge")
 
+        link(rel="alternate" hreflang="en" href="https://renmuell.github.io/")
+        link(rel="alternate" hreflang="de" href="https://renmuell.github.io/de")
+
         include ./favicon.jade
         link(href=assetsRoot+"vendors/fontawesome/css/all.min.css" rel="stylesheet")
         style
             include ../../../assets/css/web-fonts.css
+        style
+            include ../../../assets/vendors/flags/flags-custom.min.css
         style
             include ../../../assets/css/index.min.css
         block header
     body
         .background
         main
+            block link
+                -var selected = 'home'
             include ./header.jade
             block content
             include ./footer.jade
