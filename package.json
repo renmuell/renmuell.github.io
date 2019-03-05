@@ -37,7 +37,7 @@
     "gulp-sitemap": "^5.1.0",
     "gulp-uglify": "^3.0.1",
     "jade": "^1.11.0",
-    "rm_atmo": "^1.0.9"
+    "rm_atmo": "^1.0.10"
   },
   "dependencies": {}
 }
